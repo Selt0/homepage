@@ -16,8 +16,6 @@
     <!-- custom css -->
     <link rel="stylesheet" href="style.css" />
 
-    <!-- FONTAWESOME -->
-    <script src="https://kit.fontawesome.com/59dee3affe.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <header>
@@ -26,7 +24,7 @@
         <ul class="nav__list">
           <li class="nav__list-item"><a href="#" class="nav__link">Home</a></li>
           <li class="nav__list-item">
-            <a href="#" class="nav__link">About</a>
+            <a href="#hobbies" class="nav__link">About</a>
           </li>
           <li class="nav__list-item">
             <a href="#" class="nav__link">AI</a>
@@ -49,14 +47,16 @@
         </div>
       </div>
     </section>
+
+
     <div class="container">
-      <section class="about-me">
+      <section class="about-me" id="hobbies">
         <h2 class="text-center display-4">Hobbies</h2>
         <div class="description">
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, recusandae perspiciatis. Quae explicabo vitae modi aspernatur totam quisquam veritatis iure. Enim sapiente necessitatibus aliquam vitae qui, culpa dolore magnam ipsum ducimus eos voluptates expedita, sequi maiores nostrum eum. Eos suscipit iusto quaerat sed aut quas magni dolorum deleniti dolorem delectus.</p>
         </div>
         <div class="card-deck">
-          <div class="card">
+          <div class="card fade-in">
             <img class="card-img-top" src="img/convertkit-RvPiAVE-zWo-unsplash.jpg" alt="journaling">
             <div class="card-body">
               <h5 class="card-title">Setting goals</h5>
@@ -66,7 +66,7 @@
               <small class="text-muted"><span>Photo by <a href="https://unsplash.com/@convertkit?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">ConvertKit</a> on <a href="https://unsplash.com/s/photos/journaling?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span></small>
             </div>
           </div>
-          <div class="card">
+          <div class="card fade-in">
             <img class="card-img-top" src="img/safar-safarov-MSN8TFhJ0is-unsplash.jpg" alt="laptop with code">
             <div class="card-body">
               <h5 class="card-title">Coding</h5>
@@ -76,7 +76,7 @@
               <small class="text-muted"><span>Photo by <a href="https://unsplash.com/@codestorm?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Safar Safarov</a> on <a href="https://unsplash.com/s/photos/coding?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span></small>
             </div>
           </div>
-          <div class="card">
+          <div class="card fade-in">
             <img class="card-img-top" src="img/frame-harirak-bwluYjFgycI-unsplash.jpg" alt="electric guitar">
             <div class="card-body">
               <h5 class="card-title">Guitar</h5>
@@ -89,71 +89,84 @@
         </div>
       </section>
     </div>
-    <div class="container-fluid">
-      <section class="ai">
-        <h3 class="text-center display-4">Artificial Intelligence</h3>
-        <div class="row">
-          <div class="col align-self-center">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi rem harum magnam labore
-        ipsam expedita illo dicta, repellendus aut, tempora consectetur obcaecati aperiam culpa
-        molestiae sunt deserunt, quae voluptatibus eum aliquam inventore. Saepe minus provident at
-        atque necessitatibus doloremque. Ratione exercitationem amet et dignissimos voluptatum
-        consequuntur rem placeat, ipsa hic error, molestias quae repellat in eligendi temporibus ab
-        sequi veritatis ullam delectus accusamus ipsum dolorem. Praesentium unde quam esse? Rerum
-        officiis sapiente nesciunt quia consequuntur placeat, voluptatibus libero eligendi quisquam.
-        Dolorem ipsa blanditiis esse voluptas nihil sunt ullam ratione similique, illum veniam ab ex
-        maiores dolores necessitatibus tempora? Omnis, quisquam.
+
+    <div class="backgroundPink">
+      <div class="container-fluid">
+        <section class="ai">
+          <h3 class="text-center display-4">Artificial Intelligence</h3>
+          <div class="row">
+            <div class="col align-self-center slide-in from-left">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi rem harum magnam labore
+          ipsam expedita illo dicta, repellendus aut, tempora consectetur obcaecati aperiam culpa
+          molestiae sunt deserunt, quae voluptatibus eum aliquam inventore. Saepe minus provident at
+          atque necessitatibus doloremque. Ratione exercitationem amet et dignissimos voluptatum
+          consequuntur rem placeat, ipsa hic error, molestias quae repellat in eligendi temporibus ab
+          sequi veritatis ullam delectus accusamus ipsum dolorem. Praesentium unde quam esse? Rerum
+          officiis sapiente nesciunt quia consequuntur placeat, voluptatibus libero eligendi quisquam.
+          Dolorem ipsa blanditiis esse voluptas nihil sunt ullam ratione similique, illum veniam ab ex
+          maiores dolores necessitatibus tempora? Omnis, quisquam.
+            </div>
+            <div class="col slide-in from-right"><img src="img/roberto-nickson-Ddjl0Cicdr4-unsplash.jpg" alt="tesla self driving"><span>Photo by <a href="https://unsplash.com/@rpnickson?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Roberto Nickson</a> on <a href="https://unsplash.com/s/photos/machine-learning?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span></div>
           </div>
-          <div class="col"><img src="img/roberto-nickson-Ddjl0Cicdr4-unsplash.jpg" alt="tesla self driving"><span>Photo by <a href="https://unsplash.com/@rpnickson?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Roberto Nickson</a> on <a href="https://unsplash.com/s/photos/machine-learning?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span></div>
+         </section>
         </div>
-      </section>
-      <section class="robotics">
-        <h3 class="text-center display-4">Robotics</h3>
-        <div class="row">
-          <div class="col offset-md-1 col-8">
-            <img src="img/andy-kelly-0E_vhMVqL9g-1920.jpg" alt="little girl shaking hands with a robot">
-            <span>Photo by <a href="https://unsplash.com/@askkell?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Andy Kelly</a> on <a href="https://unsplash.com/s/photos/robot?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
-          </div>
-          <div class="col offset-md-4 align-self-center">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi rem harum magnam labore
-        ipsam expedita illo dicta, repellendus aut, tempora consectetur obcaecati aperiam culpa
-        molestiae sunt deserunt, quae voluptatibus eum aliquam inventore. Saepe minus provident at
-        atque necessitatibus doloremque. Ratione exercitationem amet et dignissimos voluptatum
-        consequuntur rem placeat, ipsa hic error, molestias quae repellat in eligendi temporibus ab
-        sequi veritatis ullam delectus accusamus ipsum dolorem. Praesentium unde quam esse? Rerum
-        officiis sapiente nesciunt quia consequuntur placeat, voluptatibus libero eligendi quisquam.
-        Dolorem ipsa blanditiis esse voluptas nihil sunt ullam ratione similique, illum veniam ab ex
-        maiores dolores necessitatibus tempora? Omnis, quisquam.
-          </div>
+      </div>
+
+      <div class="backgroundBeige">
+        <div class="container-fluid">
+          <section class="robotics">
+            <h3 class="text-center display-4">Robotics</h3>
+            <div class="row">
+              <div class="col offset-md-1 col-8 slide-in from-left">
+                <img src="img/andy-kelly-0E_vhMVqL9g-1920.jpg" alt="little girl shaking hands with a robot">
+                <span>Photo by <a href="https://unsplash.com/@askkell?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Andy Kelly</a> on <a href="https://unsplash.com/s/photos/robot?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+              </div>
+              <div class="col offset-md-4 align-self-center slide-in from-right">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi rem harum magnam labore
+            ipsam expedita illo dicta, repellendus aut, tempora consectetur obcaecati aperiam culpa
+            molestiae sunt deserunt, quae voluptatibus eum aliquam inventore. Saepe minus provident at
+            atque necessitatibus doloremque. Ratione exercitationem amet et dignissimos voluptatum
+            consequuntur rem placeat, ipsa hic error, molestias quae repellat in eligendi temporibus ab
+            sequi veritatis ullam delectus accusamus ipsum dolorem. Praesentium unde quam esse? Rerum
+            officiis sapiente nesciunt quia consequuntur placeat, voluptatibus libero eligendi quisquam.
+            Dolorem ipsa blanditiis esse voluptas nihil sunt ullam ratione similique, illum veniam ab ex
+            maiores dolores necessitatibus tempora? Omnis, quisquam.
+              </div>
+            </div>
+          </section>
         </div>
-      </section>
-      <section class="arvr">
-        <h3 class="text-center display-4">AR | VR</h3>
-        <div class="row">
-          <div class="col align-self-center">
-            <img src="img/patrick-schneider-87oz2SoV9Ug-unsplash.jpg" alt="augmented-reality to show an architect design">
-            <span>Photo by <a href="https://unsplash.com/@patrick_schneider?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Patrick Schneider</a> on <a href="https://unsplash.com/s/photos/augmented-reality?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
-          </div>
-          <div class="col">
-            <img src="img/xr-expo-ipDhOQ5gtEk-unsplash.jpg" alt="a guy demoing vr">
-            <span>Photo by <a href="https://unsplash.com/@xrexpo?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">XR Expo</a> on <a href="https://unsplash.com/s/photos/vr-headset?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span></span>
-          </div>
+      </div>
+
+      <div class="backgroundBrown">
+        <div class="container-fluid">
+          <section class="arvr">
+            <h3 class="text-center display-4">AR | VR</h3>
+            <div class="row">
+              <div class="col align-self-center slide-in from-left">
+                <img src="img/patrick-schneider-87oz2SoV9Ug-unsplash.jpg" alt="augmented-reality to show an architect design">
+                <span>Photo by <a href="https://unsplash.com/@patrick_schneider?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Patrick Schneider</a> on <a href="https://unsplash.com/s/photos/augmented-reality?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+              </div>
+              <div class="col slide-in from-right">
+                <img src="img/xr-expo-ipDhOQ5gtEk-unsplash.jpg" alt="a guy demoing vr">
+                <span>Photo by <a href="https://unsplash.com/@xrexpo?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">XR Expo</a> on <a href="https://unsplash.com/s/photos/vr-headset?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span></span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="container fade-in">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, minima voluptates, quos
+                error ipsam consectetur pariatur expedita eligendi beatae, quasi itaque magni veritatis magnam
+                libero nobis iusto corrupti atque voluptatum. Velit provident autem possimus? Repellat,
+                dolorum. Quas totam voluptatem libero reprehenderit est quos doloribus sapiente repellat
+                consectetur temporibus, commodi harum enim sint, dignissimos nesciunt reiciendis culpa quidem
+                eveniet provident dolores obcaecati molestiae accusamus recusandae. Soluta exercitationem sed
+                dolor magni reprehenderit! Nemo rem quibusdam minima fuga inventore sed odit suscipit quod qui
+                nisi laboriosam natus magni laudantium at dolore nam amet in, facere pariatur praesentium ex
+                quidem odio repellat. Error, delectus?
+              </div>
+            </div>
+          </section>
         </div>
-        <div class="row">
-          <div class="container">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, minima voluptates, quos
-            error ipsam consectetur pariatur expedita eligendi beatae, quasi itaque magni veritatis magnam
-            libero nobis iusto corrupti atque voluptatum. Velit provident autem possimus? Repellat,
-            dolorum. Quas totam voluptatem libero reprehenderit est quos doloribus sapiente repellat
-            consectetur temporibus, commodi harum enim sint, dignissimos nesciunt reiciendis culpa quidem
-            eveniet provident dolores obcaecati molestiae accusamus recusandae. Soluta exercitationem sed
-            dolor magni reprehenderit! Nemo rem quibusdam minima fuga inventore sed odit suscipit quod qui
-            nisi laboriosam natus magni laudantium at dolore nam amet in, facere pariatur praesentium ex
-            quidem odio repellat. Error, delectus?
-          </div>
-        </div>
-      </section>
-   </div>
+       </div>
     
     <!-- JAVACRIPT -->
 

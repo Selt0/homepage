@@ -1,7 +1,10 @@
+/* GENREAL */
+
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
   letter-spacing: 0.5px;
+  overflow-x: hidden;
 }
 
 /* NAVBAR */
@@ -98,10 +101,6 @@ header {
   font-style: italic;
 }
 
-.about-me {
-  background-color: rgb(47, 155, 243);
-}
-
 .description {
   padding-top: 25px;
   padding-bottom: 50px;
@@ -128,8 +127,11 @@ span {
 }
 
 /* AI SECTION */
-.ai {
+.backgroundPink {
   background-color: pink;
+}
+.ai .align-self-center {
+  margin-left: 15px;
 }
 
 .ai img {
@@ -138,15 +140,43 @@ span {
 }
 
 /* ROBOTICS SECTION */
-.robotics {
+.backgroundBeige {
   background-color: beige;
 }
 
 /* AR | VR SECTION */
-.arvr {
-  background-color: aqua;
-}
 
+.backgroundBrown {
+  background-color: #e08b3e;
+}
 .arvr .container {
   padding-top: 25px;
+}
+
+/* FADERS */
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 300ms ease-in;
+}
+
+.fade-in.appear {
+  opacity: 1;
+}
+
+.from-left {
+  transform: translateX(-50%);
+}
+.from-right {
+  transform: translateX(50%);
+}
+
+.from-left,
+.from-right {
+  transition: transform 400ms ease-in;
+}
+
+.from-left.appear,
+.from-right.appear {
+  transform: translateX(0);
 }
