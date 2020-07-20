@@ -1,10 +1,23 @@
 /* GENREAL */
 
+html,
 body {
+  overflow-x: hidden;
+}
+
+body {
+  position: relative;
   margin: 0;
   font-family: 'Poppins', sans-serif;
   letter-spacing: 0.5px;
-  overflow-x: hidden;
+}
+
+img {
+  width: 100%;
+}
+
+span {
+  display: inline-block;
 }
 
 /* NAVBAR */
@@ -20,6 +33,7 @@ a:hover {
   color: var(--text);
   text-decoration: none;
   width: 32%;
+  display: none;
 }
 
 header {
@@ -33,7 +47,7 @@ header {
   z-index: 999;
   display: flex;
   align-items: center;
-  padding: 1.5em 3em;
+  padding: 1.5em 10px;
   transition: background 250ms ease-in;
   background: var(--background);
   color: var(--text);
@@ -55,7 +69,7 @@ header {
   position: relative;
   text-transform: uppercase;
   letter-spacing: 2px;
-  font-size: 0.9rem;
+  font-size: 11px;
   border-radius: 10px;
   text-shadow: 1px 1px #3b3333;
 }
@@ -119,24 +133,13 @@ section .row {
   padding-top: 25px;
 }
 
-.col img {
-  width: 100%;
-}
-span {
-  display: inline-block;
-}
-
 /* AI SECTION */
 .backgroundPink {
   background-color: pink;
 }
-.ai .align-self-center {
-  margin-left: 15px;
-}
 
-.ai img {
-  max-width: 500px;
-  max-height: 750px;
+.ai .container {
+  margin-bottom: 50px;
 }
 
 /* ROBOTICS SECTION */
@@ -144,13 +147,20 @@ span {
   background-color: beige;
 }
 
+.robotics .container {
+  margin-top: 25px;
+}
 /* AR | VR SECTION */
 
 .backgroundBrown {
-  background-color: #e08b3e;
+  background-color: #eed696;
 }
 .arvr .container {
   padding-top: 25px;
+}
+
+.arvr .row div:nth-child(1) {
+  margin-bottom: 15px;
 }
 
 /* FADERS */
@@ -173,10 +183,58 @@ span {
 
 .from-left,
 .from-right {
-  transition: transform 400ms ease-in;
+  transition: opacity 300ms ease-in, transform 600ms ease-in;
+  opacity: 0;
 }
 
 .from-left.appear,
 .from-right.appear {
   transform: translateX(0);
+  opacity: 1;
+}
+
+/* BREAKPOINTS */
+/* Extra small devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  header {
+    justify-content: center;
+  }
+
+  .nav__link {
+    font-size: 0.9rem;
+  }
+
+  .card-deck .card {
+    flex: auto;
+  }
+
+  .ai img {
+    max-width: 465px;
+    max-height: 700px;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .card-deck .card {
+    flex: 1 0 0%;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .site-logo {
+    display: initial;
+  }
+
+  header {
+    justify-content: initial;
+  }
+
+  .ai img {
+    max-height: 600px;
+  }
 }
