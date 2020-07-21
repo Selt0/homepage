@@ -9,31 +9,8 @@ body {
   position: relative;
   margin: 0;
   font-family: 'Poppins', sans-serif;
-  letter-spacing: 0.5px;
-}
-
-img {
-  width: 100%;
-}
-
-span {
-  display: inline-block;
-}
-
-/* NAVBAR */
-
-a:hover {
-  text-decoration: none;
-  color: inherit;
-}
-
-.site-logo {
-  font-weight: 900;
-  font-size: 1rem;
-  color: var(--text);
-  text-decoration: none;
-  width: 32%;
-  display: none;
+  letter-spacing: 0.8px;
+  line-height: 2;
 }
 
 header {
@@ -51,6 +28,42 @@ header {
   transition: background 250ms ease-in;
   background: var(--background);
   color: var(--text);
+}
+
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  width: 100%;
+}
+
+span {
+  display: block;
+}
+
+.row {
+  padding-top: 25px;
+}
+
+.container {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.end {
+  padding-bottom: 10vh;
+}
+/* NAVBAR */
+
+.site-logo {
+  font-weight: 900;
+  font-size: 1rem;
+  color: var(--text);
+  text-decoration: none;
+  width: 34%;
+  display: none;
 }
 
 .nav__list {
@@ -101,14 +114,22 @@ header {
   box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
 }
 
+/* SECTIONS */
+.container-fluid {
+  max-width: 1300px;
+}
+
+.homepage {
+  padding-top: 100px;
+  padding-bottom: 25px;
+}
+
 /* HERO */
 
 .intro {
-  padding: 50vh 0;
-  background: #97a1aa url('./img/IMG_0269.jpg') no-repeat center center fixed;
-  background-blend-mode: multiply;
+  padding: 35vh 0;
+
   color: white;
-  background-size: cover;
 }
 
 .lead {
@@ -120,17 +141,15 @@ header {
   padding-bottom: 50px;
 }
 
-/* SECTIONS */
-.container-fluid {
-  max-width: 1300px;
-}
-section {
-  padding-top: 100px;
-  padding-bottom: 25px;
-}
+/* HOMEPAGE */
 
-section .row {
-  padding-top: 25px;
+#homepage {
+  background: #97a1aa url('./img/IMG_0269.jpg') no-repeat center center fixed;
+  background-size: cover;
+  background-blend-mode: multiply;
+}
+#homepage .jumbotron {
+  background-color: transparent;
 }
 
 /* AI SECTION */
@@ -161,6 +180,84 @@ section .row {
 
 .arvr .row div:nth-child(1) {
   margin-bottom: 15px;
+}
+
+/* AI PAGE */
+#aiBanner {
+  /* Photo by Franki Chamaki on Unsplash */
+  background: #97a1aa url('./img/franki-chamaki-1K6IQsQbizI-unsplash.jpg') no-repeat center center
+    fixed;
+  background-size: cover;
+}
+
+#aiBanner .jumbotron {
+  color: #f4f4f4;
+  background-color: #47494b;
+}
+
+.article {
+  padding-top: 5em;
+}
+
+.article h2 {
+  padding-bottom: 30px;
+}
+
+.profile {
+  align-items: center;
+}
+
+.graybox {
+  border-radius: 5em;
+  background-color: grey;
+  height: 100px;
+  width: 100px;
+  margin-bottom: 15px;
+}
+
+.quote {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.date {
+  color: grey;
+  font-size: 20px;
+  font-style: italic;
+  letter-spacing: 4px;
+  padding-right: 20px;
+}
+
+.blockquote {
+  float: left;
+  height: 250px;
+  margin: 20px auto;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.banner {
+  width: 100%;
+  height: 300px;
+}
+
+.img-container {
+  text-align: center;
+  padding: 25px 0;
+}
+.img-container img {
+  max-height: 450px;
+  width: auto;
+}
+
+.img-container span {
+  color: grey;
+  font-size: 10px;
+}
+
+.media {
+  padding: 15px 0;
+  justify-content: space-around;
+  font-size: 25px;
 }
 
 /* FADERS */
@@ -203,6 +300,7 @@ Small devices (landscape phones, 576px and up) */
     justify-content: center;
   }
 
+  /* HOMEPAGE */
   .nav__link {
     font-size: 0.9rem;
   }
@@ -214,6 +312,14 @@ Small devices (landscape phones, 576px and up) */
   .ai img {
     max-width: 465px;
     max-height: 700px;
+  }
+
+  /* AI */
+
+  .blockquote {
+    margin: 2em 1em;
+    width: 500px;
+    font-size: 2em;
   }
 }
 

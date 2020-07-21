@@ -1,10 +1,10 @@
 // Navbar transition
 
 const header = document.querySelector('header');
-const sectionOne = document.querySelector('.intro');
+const sectionOne = document.querySelector('.jumbotron');
 
 let navOptions = {
-  threshold: 0.4,
+  threshold: 0.8,
   rootMargin: '-150px 0px 0px 0px',
 };
 
