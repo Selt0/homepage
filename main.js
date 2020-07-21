@@ -1,14 +1,14 @@
 // Navbar transition
 
 const header = document.querySelector('header');
-const sectionOne = document.querySelector('.jumbotron');
+const jumbotron = document.querySelector('.jumbotron');
 
 let navOptions = {
   threshold: 0.8,
   rootMargin: '-150px 0px 0px 0px',
 };
 
-const sectionOneObserver = new IntersectionObserver((entries) => {
+const jumbotronObserver = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     !entry.isIntersecting
       ? header.classList.add('nav-scrolled')
@@ -16,7 +16,7 @@ const sectionOneObserver = new IntersectionObserver((entries) => {
   });
 }, navOptions);
 
-sectionOneObserver.observe(sectionOne);
+jumbotronObserver.observe(jumbotron);
 
 // fade in cards
 

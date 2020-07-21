@@ -127,9 +127,13 @@ span {
 /* HERO */
 
 .intro {
-  padding: 35vh 0;
+  padding: 30vh 0;
 
   color: white;
+}
+
+.jumbotron {
+  background-color: transparent;
 }
 
 .lead {
@@ -147,9 +151,6 @@ span {
   background: #97a1aa url('./img/IMG_0269.jpg') no-repeat center center fixed;
   background-size: cover;
   background-blend-mode: multiply;
-}
-#homepage .jumbotron {
-  background-color: transparent;
 }
 
 /* AI SECTION */
@@ -195,11 +196,11 @@ span {
   background-color: #47494b;
 }
 
-.article {
+.padding-top {
   padding-top: 5em;
 }
 
-.article h2 {
+.padding-top h2 {
   padding-bottom: 30px;
 }
 
@@ -260,6 +261,51 @@ span {
   font-size: 25px;
 }
 
+/* ROBITICS */
+.backgroundBlack {
+  background-color: #1d1d1d;
+  height: 700px;
+}
+
+.white-text {
+  color: #f4f4f4;
+}
+
+#robotIntro {
+  /* Photo by Franck V. on Unsplash */
+  /* Photo by Rock'n Roll Monkey on Unsplash */
+  background: url('img/franck-v-JjGXjESMxOY-unsplash.jpg') no-repeat center center;
+  background-size: cover;
+}
+
+#robotIntroContainer {
+  display: flex;
+}
+
+#robotIntroContainer .jumbotron {
+  width: 350px;
+}
+
+.regristration {
+  width: 200px;
+  border-radius: 4em;
+  background-color: #78d7d9;
+}
+
+.countdown {
+  margin: 0 auto;
+  padding-top: 100px;
+  background-color: transparent;
+}
+
+.white-background {
+  background-color: #f4f4f4;
+}
+
+.off-set-top {
+  margin-top: -400px;
+}
+
 /* FADERS */
 
 .fade-in {
@@ -309,22 +355,22 @@ Small devices (landscape phones, 576px and up) */
     flex: auto;
   }
 
-  .ai img {
-    max-width: 465px;
-    max-height: 700px;
-  }
-
   /* AI */
-
   .blockquote {
     margin: 2em 1em;
     width: 500px;
     font-size: 2em;
   }
+
+  .ai img {
+    max-width: 465px;
+    max-height: 700px;
+  }
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+  /* HOMEPAGE */
   .card-deck .card {
     flex: 1 0 0%;
   }
@@ -332,13 +378,15 @@ Small devices (landscape phones, 576px and up) */
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+  header {
+    justify-content: initial;
+  }
+
   .site-logo {
     display: initial;
   }
 
-  header {
-    justify-content: initial;
-  }
+  /* AI */
 
   .ai img {
     max-height: 600px;
