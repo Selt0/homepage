@@ -55,6 +55,58 @@ span {
 .end {
   padding-bottom: 10vh;
 }
+
+.backgroundBrown {
+  background-color: #eed696;
+}
+
+.backgroundBeige {
+  background-color: beige;
+}
+
+.backgroundBlack {
+  background-color: #1d1d1d;
+  height: 700px;
+}
+
+.backgroundPink {
+  background-color: pink;
+}
+
+.container-fluid {
+  max-width: 1300px;
+}
+
+.jumbotron {
+  background-color: transparent;
+}
+
+.lead {
+  font-style: italic;
+}
+
+.white-text {
+  color: #f4f4f4;
+}
+
+.padding-top {
+  padding-top: 5em;
+}
+
+.text-underline {
+  text-decoration: underline;
+}
+
+.roundedBtn {
+  border-radius: 100px;
+  width: 100px;
+  height: 100px;
+}
+
+.banner {
+  height: 300px;
+}
+
 /* NAVBAR */
 
 .site-logo {
@@ -82,7 +134,7 @@ span {
   position: relative;
   text-transform: uppercase;
   letter-spacing: 2px;
-  font-size: 11px;
+  font-size: 10px;
   border-radius: 10px;
   text-shadow: 1px 1px #3b3333;
 }
@@ -115,9 +167,6 @@ span {
 }
 
 /* SECTIONS */
-.container-fluid {
-  max-width: 1300px;
-}
 
 .homepage {
   padding-top: 100px;
@@ -130,14 +179,6 @@ span {
   padding: 30vh 0;
 
   color: white;
-}
-
-.jumbotron {
-  background-color: transparent;
-}
-
-.lead {
-  font-style: italic;
 }
 
 .description {
@@ -154,27 +195,18 @@ span {
 }
 
 /* AI SECTION */
-.backgroundPink {
-  background-color: pink;
-}
 
 .ai .container {
   margin-bottom: 50px;
 }
 
 /* ROBOTICS SECTION */
-.backgroundBeige {
-  background-color: beige;
-}
 
 .robotics .container {
   margin-top: 25px;
 }
 /* AR | VR SECTION */
 
-.backgroundBrown {
-  background-color: #eed696;
-}
 .arvr .container {
   padding-top: 25px;
 }
@@ -196,10 +228,6 @@ span {
   background-color: #47494b;
 }
 
-.padding-top {
-  padding-top: 5em;
-}
-
 .padding-top h2 {
   padding-bottom: 30px;
 }
@@ -208,7 +236,7 @@ span {
   align-items: center;
 }
 
-.graybox {
+.profile-pic {
   border-radius: 5em;
   background-color: grey;
   height: 100px;
@@ -220,6 +248,7 @@ span {
   padding-top: 25px;
   padding-bottom: 25px;
 }
+
 .date {
   color: grey;
   font-size: 20px;
@@ -234,11 +263,6 @@ span {
   margin: 20px auto;
   font-size: 25px;
   font-weight: bold;
-}
-
-.banner {
-  width: 100%;
-  height: 300px;
 }
 
 .img-container {
@@ -262,34 +286,30 @@ span {
 }
 
 /* ROBITICS */
-.backgroundBlack {
-  background-color: #1d1d1d;
-  height: 700px;
-}
-
-.white-text {
-  color: #f4f4f4;
-}
 
 #robotIntro {
   /* Photo by Franck V. on Unsplash */
-  /* Photo by Rock'n Roll Monkey on Unsplash */
   background: url('img/franck-v-JjGXjESMxOY-unsplash.jpg') no-repeat center center;
   background-size: cover;
 }
 
 #robotIntroContainer {
   display: flex;
+  flex-direction: column;
 }
 
 #robotIntroContainer .jumbotron {
   width: 350px;
+  text-align: center;
 }
 
-.regristration {
+#robotIntroContainer button {
+  background-color: #78d7d9;
+}
+
+.btn-lg {
   width: 200px;
   border-radius: 4em;
-  background-color: #78d7d9;
 }
 
 .countdown {
@@ -298,14 +318,17 @@ span {
   background-color: transparent;
 }
 
-.white-background {
-  background-color: #f4f4f4;
-}
-
 .off-set-top {
-  margin-top: -400px;
+  margin-top: -450px;
 }
 
+.off-set-top h4 {
+  color: inherit;
+}
+
+#robotBanner {
+  background-color: #d9eced;
+}
 /* FADERS */
 
 .fade-in {
@@ -374,6 +397,9 @@ Small devices (landscape phones, 576px and up) */
   .card-deck .card {
     flex: 1 0 0%;
   }
+  .off-set-top .description {
+    color: #f4f4f4;
+  }
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -390,5 +416,14 @@ Small devices (landscape phones, 576px and up) */
 
   .ai img {
     max-height: 600px;
+  }
+
+  /* ROBOTICS */
+  #robotIntroContainer {
+    flex-direction: row;
+  }
+
+  .container-fluid section:nth-child(1) {
+    padding-top: 5em;
   }
 }
