@@ -30,6 +30,13 @@ header {
   color: var(--text);
 }
 
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Krona One', sans-serif;
+}
+
 a:hover {
   text-decoration: none;
   color: inherit;
@@ -37,6 +44,7 @@ a:hover {
 
 img {
   width: 100%;
+  border-radius: 1em;
 }
 
 span {
@@ -44,7 +52,7 @@ span {
 }
 
 .row {
-  padding-top: 25px;
+  padding-top: 30px;
 }
 
 .container {
@@ -56,21 +64,9 @@ span {
   padding-bottom: 10vh;
 }
 
-.backgroundBrown {
-  background-color: #eed696;
-}
-
-.backgroundBeige {
-  background-color: beige;
-}
-
 .backgroundBlack {
   background-color: #1d1d1d;
   height: 700px;
-}
-
-.backgroundPink {
-  background-color: pink;
 }
 
 .container-fluid {
@@ -107,7 +103,45 @@ span {
   height: 300px;
 }
 
+.card {
+  box-shadow: 0 10px 15px #97a1aa;
+}
+
+.btn-lightBlue {
+  background-color: #2660a4;
+  color: #f4f4f4;
+  width: 150px;
+}
+
+.btn-lg {
+  width: 200px;
+  border-radius: 4em;
+}
+
+.text-lightBlue {
+  background-color: #93d0fd;
+  border-radius: 2em;
+}
+
+.card-deck {
+  margin-top: 25px;
+}
+
+.style-two {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.75),
+    rgba(0, 0, 0, 0)
+  );
+}
+
 /* NAVBAR */
+.main-nav {
+  margin: 0 auto;
+}
 
 .site-logo {
   font-weight: 900;
@@ -170,7 +204,7 @@ span {
 
 .homepage {
   padding-top: 100px;
-  padding-bottom: 25px;
+  padding-bottom: 75px;
 }
 
 /* HERO */
@@ -197,7 +231,7 @@ span {
 /* AI SECTION */
 
 .ai .container {
-  margin-bottom: 50px;
+  margin: 50px auto;
 }
 
 /* ROBOTICS SECTION */
@@ -307,14 +341,9 @@ span {
   background-color: #78d7d9;
 }
 
-.btn-lg {
-  width: 200px;
-  border-radius: 4em;
-}
-
 .countdown {
   margin: 0 auto;
-  padding-top: 100px;
+  padding-top: 125px;
   background-color: transparent;
 }
 
@@ -413,6 +442,8 @@ Small devices (landscape phones, 576px and up) */
 
   .site-logo {
     display: initial;
+    position: absolute;
+    padding-left: 50px;
   }
 
   /* AI */
