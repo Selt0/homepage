@@ -189,8 +189,8 @@ span {
 /* HOMEPAGE */
 
 #homepage {
-  background: #97a1aa url('./img/IMG_0269.jpg') no-repeat center center fixed;
-  background-size: cover;
+  background: #97a1aa url('./img/IMG_0269.jpg') no-repeat center center/cover fixed;
+  /* background-size: cover; */
   background-blend-mode: multiply;
 }
 
@@ -400,6 +400,9 @@ Small devices (landscape phones, 576px and up) */
   .off-set-top .description {
     color: #f4f4f4;
   }
+  .container-fluid section:nth-child(1) {
+    padding-top: 5em;
+  }
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -421,9 +424,5 @@ Small devices (landscape phones, 576px and up) */
   /* ROBOTICS */
   #robotIntroContainer {
     flex-direction: row;
-  }
-
-  .container-fluid section:nth-child(1) {
-    padding-top: 5em;
   }
 }
