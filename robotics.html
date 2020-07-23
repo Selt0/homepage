@@ -174,5 +174,32 @@
 
     <!-- JAVACRIPT -->
     <script src="main.js"></script>
+    <script>
+      const countDownDate = new Date('Jul 08, 2021 16:37:52').getTime();
+
+      let countdown = setInterval(function () {
+        let now = new Date().getTime();
+        let timeleft = countDownDate - now;
+
+        let days = Math.floor(timeleft / (1000 * 60 * 60 * 24));
+        let hours = Math.floor((timeleft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        let minutes = Math.floor((timeleft % (1000 * 60 * 60)) / (1000 * 60));
+        let seconds = Math.floor((timeleft % (1000 * 60)) / 1000);
+
+        document.getElementById('days').innerHTML = days;
+        document.getElementById('hours').innerHTML = hours;
+        document.getElementById('mins').innerHTML = minutes;
+        document.getElementById('secs').innerHTML = seconds;
+
+        if (timeleft < 0) {
+          clearInterval(countdown);
+          document.getElementById('days').innerHTML = '';
+          document.getElementById('hours').innerHTML = '';
+          document.getElementById('mins').innerHTML = '';
+          document.getElementById('secs').innerHTML = '';
+          document.getElementsByClassName('countdown').innerHTML = 'TIME UP!!';
+        }
+      }, 1000);
+    </script>
   </body>
 </html>
