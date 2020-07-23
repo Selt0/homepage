@@ -321,6 +321,10 @@ span {
   font-size: 25px;
 }
 
+.mobile-padding {
+  padding-top: 3em;
+}
+
 /* ROBITICS */
 
 #robotIntro {
@@ -504,6 +508,10 @@ Small devices (landscape phones, 576px and up) */
   }
   .container-fluid section:nth-child(1) {
     padding-top: 5em;
+  }
+
+  .mobile-padding {
+    padding-top: inherit;
   }
 }
 
