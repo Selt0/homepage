@@ -522,6 +522,4 @@ Small devices (landscape phones, 576px and up) */
   #IntroContainer {
     flex-direction: row;
   }
-
-  /* AR | VR */
-
+}
