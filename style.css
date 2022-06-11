@@ -379,6 +379,7 @@ span {
 .arvrBackgroundBanner {
   background: url(img/matt-le-SJSpo9hQf7s-unsplash.jpg) no-repeat;
   background-position: 0;
+  background-size: cover;
   /* opacity: 0.5; */
 }
 
